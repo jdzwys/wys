@@ -1,0 +1,214 @@
+.shop-car {
+  margin-top: 35px;
+}
+.shop-car .title-car {
+  font-size: 28px;
+  line-height: 28px;
+  color: #000;
+  padding: 50px 0 0 0;
+  font-weight: bold;
+}
+.shop-car .check {
+  text-align: right;
+  padding: 8px 0;
+}
+.shop-car .check p span {
+  padding: 20px 20px 20px 30px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #221815;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.shop-car .check p span input {
+  width: 18px;
+  height: 18px;
+  vertical-align: bottom;
+  margin-right: 10px;
+}
+.shop-car .car-header {
+  background-color: #949da9;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+}
+.shop-car .car-header div {
+  display: inline-block;
+}
+.shop-car .car-header > div:nth-child(1) {
+  width: 42%;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.shop-car .car-header > div:nth-child(2) {
+  width: 18%;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.shop-car .car-header > div:nth-child(3) {
+  width: 12%;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.shop-car .car-header > div:nth-child(4) {
+  width: 17%;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.shop-car .car-header > div:nth-child(5) {
+  width: 9%;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.shop-car .car-one > div {
+  float: left;
+}
+.shop-car .car-mes {
+  width: 42%;
+  height: 120px;
+}
+.shop-car .car-mes > div {
+  float: left;
+}
+.shop-car .car-mes > div:nth-child(1) {
+  width: 48px;
+  height: 100%;
+  cursor: pointer;
+  line-height: 120px;
+  text-align: center;
+}
+.shop-car .car-mes > div:nth-child(1) input {
+  width: 18px;
+  height: 18px;
+}
+.shop-car .car-mes > div:nth-child(2) {
+  width: 90px;
+  height: 90px;
+  margin: 15px 5px 0 0;
+}
+.shop-car .car-mes > div:nth-child(3) {
+  padding-left: 10px;
+  max-width: 350px;
+  margin-top: 15px;
+}
+.shop-car .car-mes > div:nth-child(3) .one {
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+  font-weight: bold;
+  height: 32px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.shop-car .car-mes > div:nth-child(3) p {
+  font-size: 12px;
+  line-height: 14px;
+  color: #58595b;
+  padding-bottom: 2px;
+}
+.shop-car .RMB {
+  width: 18%;
+  text-align: center;
+}
+.shop-car .RMB p {
+  padding-top: 46px;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+  font-weight: bold;
+}
+.shop-car .RMB p span {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #808285;
+  display: inline-block;
+}
+.shop-car .car-number {
+  width: 12%;
+  text-align: center;
+}
+.shop-car .car-number div {
+  padding-top: 37px;
+  padding-left: 15px;
+}
+.shop-car .car-number div > span:nth-child(1) {
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  background: #ccc;
+  line-height: 36px;
+}
+.shop-car .car-number div > span:nth-child(2) {
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  color: #333;
+  cursor: pointer;
+  line-height: 34px;
+  border: 1px solid #ccc;
+}
+.shop-car .car-number div > span:nth-child(3) {
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  line-height: 36px;
+  background: #00539c;
+}
+.shop-car .pic-all {
+  width: 17%;
+  text-align: center;
+}
+.shop-car .pic-all p {
+  padding-top: 46px;
+  font-size: 14px;
+  color: #00539c;
+  font-weight: bold;
+  padding-left: 20px;
+}
+.shop-car .rm-car {
+  width: 9%;
+  text-align: center;
+  margin-top: 38px;
+}
+.shop-car .rm-car span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  font-size: 20px;
+  padding-left: 25px;
+}
+.hr-b {
+  width: 1042px;
+  height: 2px;
+  background: red;
+  margin: 10px 0 10px 150px ;
+}
+.summation {
+  text-align: right;
+  margin-top: 50px;
+}
+.summation span {
+  display: inline-block;
+  width: 175px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #00539c;
+}
+.summation > span:nth-child(1) {
+  text-align: left;
+}
+.summation > span:nth-child(2) {
+  padding-right: 20px;
+}

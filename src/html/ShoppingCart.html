@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/shopping.css">
+    <script src="../js/cookie.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var shop = cookie.get('shop');
+            if (shop) {
+                shop = JSON.parse(shop);
+                // console.log(shop)
+                var idList = shop.map(elm => elm.id).join();
+                $.ajax({
+                    type: 'get',
+                    url: '../lib/shop.php',
+                    data: {
+                        'idList': idList
+                    },
+                    dataType: 'json',
+                    success: function(response) {
+                        // console.log(response)
+                        var template = '';
+                        response.forEach(function(elm) {
+                            console.log(elm);
+                            var pic = JSON.parse(elm.pic);
+                            var arr = shop.filter((val, i) => {
+                                return elm.id;
+                            });
+                            template = `
+                            <div class="car-one clear">
+                                <div class="car-mes clear">
+                                    <div>
+                                        <input type="checkbox">
+                                    </div>
+                                    <div>
+                                        <img src="${pic[0].src}" alt="" style="width:90px;">
+                                    </div>
+                                    <div>
+                                        <p class="one">
+                                            ${elm.title}
+                                        </p>
+                                        <p>商品：NNKB1900403630</p>
+                                        <p>尺寸：M</p>
+                                        <p>颜色：图片色</p>
+                                    </div>
+                                </div>
+                                <div class="RMB">
+                                    <p><span>￥${elm.price}</span>￥${elm.price}</p>
+                                </div>
+                                <div class="car-number">
+                                    <div>
+                                        <span>-</span>
+                                        <span>${arr[0].num}</span>
+                                        <span>+</span>
+                                    </div>
+                                </div>
+                                <div class="pic-all">
+                                    <div>
+                                        <p>￥${(arr[0].num*elm.price).toFixed(2)}</p>
+                                    </div>
+                                </div>
+                                <div class="rm-car">
+                                    <span>x</span>
+                                </div>
+                            </div>`;
+
+                            $('.car-body').prepend(template);
+                        });
+                    }
+                });
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="nav">
+            <!-- 登录注册 购物车 导航部分 -->
+            <div class="nav_top">
+                <div class="top area clear">
+                    <ul class="clear">
+                        <li>
+                            <a href="#">登录/注册</a><b>|</b></li>
+                        <li>
+                            <a href="#">我的账户</a><b>|</b></li>
+                        <li>
+                            <a href="#"><span class="iconfont">&#xf0179;<span>&nbsp;<i style="color: red;">0</i>
+                                            </a>
+                            <b>|</b>
+                        </li>
+                        <li>
+                            <a href="#"><span class="iconfont" style="font-size: 16px;">&#xe68c;</span>&nbsp;在线客服</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 登录注册 购物车 导航部分结束 -->
+
+            <!-- 搜索框 logo图 导航部分 -->
+            <div class="nav_md">
+                <div class="md area">
+                    <a href="">
+                        <img src="../imgs/logo_cn.png" alt="logo图" class="logo">
+                    </a>
+                    <input type="text" placeholder="西部冠军T桖" id="search">
+                    <a href="#" class="nav_text1">定制T桖</a>
+                    <a href="#" class="nav_text2">定制球衣</a>
+                    <a href="#">
+                        <img src="../imgs/search-icon.png" alt="" class="search_pg">
+                    </a>
+                </div>
+            </div>
+            <!-- 搜索框 logo图 导航部分 -->
+
+            <!-- 选择球队 导航 -->
+            <div class="nav_btm">
+                <div class="btm area">
+                    <ul class="clear">
+                        <li>
+                            <a href="#">选择球队</a>
+                            <b></b>
+                            <!-- 选择球队二级导航 -->
+                            <section class="ball_team">
+                                <ul class="sub_master">
+                                    <h3>东部球队</h3>
+                                    <li>
+                                        <a href="#">迈阿密热火</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">奥多兰魔术</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">亚特兰大老鹰</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">华盛顿奇才</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">夏洛特黄蜂</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">底特律活塞</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">印第安纳步行者</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">克利夫兰骑士</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">芝加哥公牛</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">密尔沃基雄鹿</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">波士顿凯尔特人</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">费城76人</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">纽约尼克斯</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">布鲁克林篮网</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">多伦多猛龙</a>
+                                    </li>
+                                </ul>
+                                <ul class="sub_west">
+                                    <h3>西部球队</h3>
+                                    <li>
+                                        <a href="#">圣安东尼奥马刺</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">孟菲斯灰熊</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">达拉斯独行侠</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">休斯顿火箭</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">新奥尔良鹈鹕</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">明尼苏达森林狼</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">丹弗掘金</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">犹他爵士</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">波特兰开拓者</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">奥克拉荷马城雷霆</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">萨克拉门托国王</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">菲尼克斯太阳</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">洛杉矶湖人</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">洛杉矶快船</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">金州勇士</a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../imgs/nike-logo.jpg" alt="#" style="width: 60px;height: 25px;padding-top: 5px;">
+                            </a>
+                        </li>
+                        <!-- 品牌二级导航 -->
+                        <li>
+                            <a href="#">品牌</a>
+                            <i></i>
+                            <section class="brand">
+                                <ul>
+                                    <li><a href="#">NBA</a></li>
+                                    <li><a href="#">NIKE</a></li>
+                                    <li><a href="#">MITCHELL&NESS</a></li>
+                                    <li><a href="#">SPALDING 篮球</a></li>
+                                    <li><a href="#">UNDER ARMOUR</a></li>
+                                    <li><a href="#">NEW ERA</a></li>
+                                    <li><a href="#">NBA Style</a></li>
+                                </ul>
+                            </section>
+                        </li>
+                        <li>
+                            <a href="#">所有商品</a>
+                        </li>
+                        <!-- 球衣二级导航 -->
+                        <li>
+                            <a href="#">球衣</a>
+                            <s class="s"></s>
+                            <section class="polo_shirt">
+                                <ul>
+                                    <li><a href="#">Swingman</a></li>
+                                    <li><a href="#">Hardwood Classics</a></li>
+                                    <li><a href="#">Authentic</a></li>
+                                </ul>
+                            </section>
+                        </li>
+                        <!-- 上装二级导航 -->
+                        <li>
+                            <a href="#">上装</a>
+                            <span class="trigon"></span>
+                            <section class="wear">
+                                <ul>
+                                    <li><a href="#">T恤</a></li>
+                                    <li><a href="#">卫衣</a></li>
+                                    <li><a href="#">外套</a></li>
+                                    <li><a href="#">紧身衣</a></li>
+                                    <li><a href="#">羽绒服</a></li>
+                                </ul>
+                            </section>
+                        </li>
+                        <!-- 下装二级导航 -->
+                        <li>
+                            <a href="#">下装</a>
+                            <span class="trigon1"></span>
+                            <section class="pants">
+                                <li><a href="#">球裤</a></li>
+                                <li><a href="#">短裤</a></li>
+                                <li><a href="#">长裤</a></li>
+                            </section>
+                        </li>
+                        <!-- 女子部分二级导航 -->
+                        <li>
+                            <a href="#">女子</a>
+                            <span class="trigon2"></span>
+                            <section class="woman">
+                                <ul>
+                                    <li><a href="#">T恤</a></li>
+                                    <li><a href="#">篮球</a></li>
+                                    <li><a href="#">卫衣</a></li>
+                                    <li><a href="#">夹克</a></li>
+                                    <li><a href="#">运动长裤</a></li>
+                                    <li><a href="#">休闲鞋</a></li>
+                                    <li><a href="#">球衣</a></li>
+                                </ul>
+                            </section>
+                        </li>
+                        <!-- 儿童青少年二级导航 -->
+                        <li>
+                            <a href="#">儿童/青少年</a>
+                            <span class="trigon3"></span>
+                            <section class="child">
+                                <ul>
+                                    <li><a href="#">球衣</a></li>
+                                    <li><a href="#">T恤</a></li>
+                                    <li><a href="#">裤装</a></li>
+                                    <li><a href="#">外套</a></li>
+                                    <li><a href="#">卫衣</a></li>
+                                    <li><a href="#">篮球</a></li>
+                                </ul>
+                            </section>
+                        </li>
+                        <!-- 鞋类二级导航 -->
+                        <li>
+                            <a href="#">鞋类</a>
+                            <span class="trigon4"></span>
+                            <section class="shoes">
+                                <ul>
+                                    <li><a href="#">篮球鞋</a></li>
+                                    <li><a href="#">休闲鞋</a></li>
+                                    <li><a href="#">UA篮球鞋</a></li>
+                                </ul>
+                            </section>
+                        </li>
+                        <!-- 篮球二级导航 -->
+                        <li>
+                            <a href="#">篮球</a>
+                            <span class="trigon5"></span>
+                            <section class="ball">
+                                <ul>
+                                    <li>
+                                        <a href="#">PU篮球</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">橡胶篮球</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">真皮篮球</a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </li>
+                        <!-- 其他配件二级导航 -->
+                        <li>
+                            <a href="#">配件</a>
+                            <span class="trigon6"></span>
+                            <section class="accessories">
+                                <ul>
+                                    <li>
+                                        <a href="#">手环</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">内裤</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">袜子</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">运动护具</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">护腕</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">毛巾</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">手机壳</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">玩偶公仔</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">帽子</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">背包</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">球星卡</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">其他</a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </li>
+                    </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 购物车商品部分 -->
+    <div id="shop-main">
+        <div class="shop-car area">
+            <div class="title-car">
+                <p>购物车</p>
+            </div>
+
+            <div class="check">
+                <p>
+
+                    <span><input type="radio">全选</span>
+                    <span>删除</span>
+                </p>
+            </div>
+
+            <!-- 商品的价格 数量表头部分 -->
+            <div class="car-header">
+                <div>NBA产品</div>
+                <div>价格</div>
+                <div>数量</div>
+                <div>总计</div>
+                <div>删除</div>
+            </div>
+
+            <div class="car-body clear">
+                <!-- <div class="car-one clear">
+                    <div class="car-mes clear">
+                        <div>
+                            <input type="checkbox">
+                        </div>
+                        <div>
+                            <img src="../imgs/90X90.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="one">
+                                NBA 休斯顿火箭队 保罗 Nike 男子短袖T恤 AO0889-658
+                            </p>
+                            <p>商品：NNKB1900403630</p>
+                            <p>尺寸：M</p>
+                            <p>颜色：图片色</p>
+                        </div>
+                    </div>
+                    <div class="RMB">
+                        <p><span>￥299.00</span>￥239.00</p>
+                    </div>
+                    <div class="car-number">
+                        <div>
+                            <span>-</span>
+                            <span>1</span>
+                            <span>+</span>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="pic-all">
+                        <div>
+                            <p>￥239.00</p>
+                        </div>
+                    </div>
+                    <div class="rm-car">
+                        <span>x</span>
+                    </div>
+                </div> -->
+
+                <div class="hr-b"></div>
+
+            </div>
+
+            <div class="check">
+                <p>
+                    <span><input type="radio">全选</span>
+                    <span>删除</span>
+                </p>
+            </div>
+
+            <div class="summation">
+                <span>订单总计</span>
+                <span>￥0.00</span>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

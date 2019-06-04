@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>NBA Store</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../js/banner.js"></script>
+
+    <script>
+        $(function() {
+            $('.slider').slider();
+        });
+    </script>
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="nav">
+
+            <!-- 导航登录注册 购物车部分 -->
+            <div class="nav_top">
+                <div class="top area clear">
+                    <ul class="clear">
+                        <li>
+                            <a href="./register.html">登录/注册</a><b>|</b></li>
+                        <li>
+                            <a href="./register.html">我的账户</a><b>|</b></li>
+                        <li>
+                            <a href="./register.html"><span class="iconfont">&#xf0179;<span>&nbsp;<i style="color: red;">0</i>
+                            </a>
+                            <b>|</b>
+                        </li>
+                        <li>
+                            <a href="./register.html"><span class="iconfont" style="font-size: 16px;">&#xe68c;</span>&nbsp;在线客服</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 导航搜索框 部分 -->
+            <div class="nav_md">
+                <div class="md area">
+                    <a href="./register.html">
+                        <img src="../imgs/logo_cn.png" alt="logo图" class="logo">
+                    </a>
+                    <input type="text" placeholder="西部冠军T桖" id="search">
+                    <a href="./register.html" class="nav_text1">定制T桖</a>
+                    <a href="./register.html" class="nav_text2">定制球衣</a>
+                    <a href="./register.html">
+                        <img src="../imgs/search-icon.png" alt="" class="search_pg">
+                    </a>
+                </div>
+
+            </div>
+            <div class="nav_btm">
+
+                <!-- 商品导航 -->
+                <div class="btm area">
+                    <ul class="clear">
+                        <li>
+                            <a href="./register.html">选择球队</a>
+                            <b></b>
+                            <!-- 选择球队二级导航 -->
+                            <section class="ball_team">
+                                <ul class="sub_master">
+                                    <h3>东部球队</h3>
+                                    <li>
+                                        <a href="./register.html">迈阿密热火</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">奥多兰魔术</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">亚特兰大老鹰</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">华盛顿奇才</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">夏洛特黄蜂</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">底特律活塞</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">印第安纳步行者</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">克利夫兰骑士</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">芝加哥公牛</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">密尔沃基雄鹿</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">波士顿凯尔特人</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">费城76人</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">纽约尼克斯</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">布鲁克林篮网</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">多伦多猛龙</a>
+                                    </li>
+                                </ul>
+                                <ul class="sub_west">
+                                    <h3>西部球队</h3>
+                                    <li>
+                                        <a href="./register.html">圣安东尼奥马刺</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">孟菲斯灰熊</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">达拉斯独行侠</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">休斯顿火箭</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">新奥尔良鹈鹕</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">明尼苏达森林狼</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">丹弗掘金</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">犹他爵士</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">波特兰开拓者</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">奥克拉荷马城雷霆</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">萨克拉门托国王</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">菲尼克斯太阳</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">洛杉矶湖人</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">洛杉矶快船</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">金州勇士</a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img="../imgs/nike-logo.jpg" alt="#" style="width: 60px;height: 25px;padding-top: 5px;">
+                            </a>
+                        </li>
+                        <!-- 品牌 及二级导航部分 -->
+                        <li>
+                            <a href="./register.html">品牌</a>
+                            <i></i>
+                            <section class="brand">
+                                <ul>
+                                    <li><a href="./register.html">NBA</a></li>
+                                    <li><a href="./register.html">NIKE</a></li>
+                                    <li><a href="./register.html">MITCHELL&NESS</a></li>
+                                    <li><a href="./register.html">SPALDING 篮球</a></li>
+                                    <li><a href="./register.html">UNDER ARMOUR</a></li>
+                                    <li><a href="./register.html">NEW ERA</a></li>
+                                    <li><a href="./register.html">NBA Style</a></li>
+                                </ul>
+                            </section>
+                        </li>
+                        <li>
+                            <a href="./register.html">所有商品</a>
+                        </li>
+
+                        <!-- 球衣及球衣二级导航部分 -->
+                        <li>
+                            <a href="./register.htm./register.html">球衣</a>
+                            <s class="s"></s>
+                            <section class="polo_shirt">
+                                <ul>
+                                    <li><a href="./register.html">Swingman</a></li>
+                                    <li><a href="./register.html">Hardwood Classics</a></li>
+                                    <li><a href="./register.html">Authentic</a></li>
+                                </ul>
+                            </section>
+                        </li>
+
+                        <!-- 上装及上装二级导航部分 -->
+                        <li>
+                            <a href="./register.htm./register.htm./register.html">上装</a>
+                            <span class="trigon"></span>
+                            <section class="wear">
+                                <ul>
+                                    <li><a href="./register.htm./register.html">T恤</a></li>
+                                    <li><a href="./register.htm./register.html">卫衣</a></li>
+                                    <li><a href="./register.htm./register.html">外套</a></li>
+                                    <li><a href="./register.htm./register.html">紧身衣</a></li>
+                                    <li><a href="./register.htm./register.html">羽绒服</a></li>
+                                </ul>
+                            </section>
+                        </li>
+
+                        <!-- 下装及下装二级导航部分 -->
+                        <li>
+                            <a href="./register.html">下装</a>
+                            <span class="trigon1"></span>
+                            <section class="pants">
+                                <li><a href="./register.html">球裤</a></li>
+                                <li><a href="./register.html">短裤</a></li>
+                                <li><a href="./register.html">长裤</a></li>
+                            </section>
+                        </li>
+
+                        <!-- 女子及女子二级导航部分 -->
+                        <li>
+                            <a href="./register.html">女子</a>
+                            <span class="trigon2"></span>
+                            <section class="woman">
+                                <ul>
+                                    <li><a href="./register.html">T恤</a></li>
+                                    <li><a href="./register.html">篮球</a></li>
+                                    <li><a href="./register.html">卫衣</a></li>
+                                    <li><a href="./register.html">夹克</a></li>
+                                    <li><a href="./register.html">运动长裤</a></li>
+                                    <li><a href="./register.html">休闲鞋</a></li>
+                                    <li><a href="./register.html">球衣</a></li>
+                                </ul>
+                            </section>
+                        </li>
+
+                        <!-- 儿童青少年及儿童青少年二级导航部分 -->
+                        <li>
+                            <a href="./register.html">儿童/青少年</a>
+                            <span class="trigon3"></span>
+                            <section class="child">
+                                <ul>
+                                    <li><a href="./register.html">球衣</a></li>
+                                    <li><a href="./register.html">T恤</a></li>
+                                    <li><a href="./register.html">裤装</a></li>
+                                    <li><a href="./register.html">外套</a></li>
+                                    <li><a href="./register.html">卫衣</a></li>
+                                    <li><a href="./register.html">篮球</a></li>
+                                </ul>
+                            </section>
+                        </li>
+
+                        <!-- 鞋类及鞋类二级导航部分 -->
+                        <li>
+                            <a href="./register.html">鞋类</a>
+                            <span class="trigon4"></span>
+                            <section class="shoes">
+                                <ul>
+                                    <li><a href="./register.html">篮球鞋</a></li>
+                                    <li><a href="./register.html">休闲鞋</a></li>
+                                    <li><a href="./register.html">UA篮球鞋</a></li>
+                                </ul>
+                            </section>
+                        </li>
+
+                        <!-- 篮球及球衣篮球导航部分 -->
+                        <li>
+                            <a href="./register.html">篮球</a>
+                            <span class="trigon5"></span>
+                            <section class="ball">
+                                <ul>
+                                    <li>
+                                        <a href="./register.html">PU篮球</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">橡胶篮球</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">真皮篮球</a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </li>
+
+                        <!-- 配件及配件二级导航部分 -->
+                        <li>
+                            <a href="./register.html">配件</a>
+                            <span class="trigon6"></span>
+                            <section class="accessories">
+                                <ul>
+                                    <li>
+                                        <a href="./register.html">手环</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">内裤</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">袜子</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">运动护具</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">护腕</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">毛巾</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">手机壳</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">玩偶公仔</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">帽子</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">背包</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">球星卡</a>
+                                    </li>
+                                    <li>
+                                        <a href="./register.html">其他</a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </li>
+                    </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="nav_pg" style="background: url(../imgs/15294641645532316.png) no-repeat;">
+            <!-- <a href="#">
+                <img ="../imgs/15294641645532316.png" alt="#">
+            </a> -->
+        </div>
+    </header>
+
+    <main>
+        <!-- banner tu -->
+        <div class="slider">
+            <div class="banner-pg">
+                <img src="../imgs/15580793839724426.jpg" alt="#">
+                <img src="../imgs/15584123857586907.jpg" alt="#">
+                <img src="../imgs/155868507625584.jpg" alt="#">
+            </div>
+            <span class="tab-l"></span>
+            <span class="tab-r"></span>
+            <section class="tab-all clear">
+                <span class="tab-1"></span>
+                <span class="tab-2"></span>
+                <span class="tab-3"></span>
+            </section>
+
+        </div>
+        <section class="main area">
+            <div class="hr-left"></div>
+            <div class="hr-right"></div>
+            <div class="y-team">选择您的球队</div>
+        </section>
+        <section class="wrap area">
+
+            <!-- 球队小logo图部分 -->
+            <div class="all-team">
+                <div class="east-incon">
+                    <dl>
+                        <dt><img src="../imgs/east.png" alt=""></dt>
+                        <dd>
+                            <a href="#">
+                                <img src="../imgs/east_1.png">
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#">
+                                <img src="../imgs/east_2.png">
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#">
+                                <img src="../imgs/east_3.png">
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#">
+                                <img src="../imgs/east_4.png">
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#">
+                                <img src="../imgs/east_5.png">
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#">
+                                <img src="../imgs/east_6.png">
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#">
+                                <img src="../imgs/east_7.png">
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#">
+                                <img src="../imgs/east_8.png">
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#">
+                                <img src="../imgs/east_9.png">
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#">
+                                <img src="../imgs/east_10.png">
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#">
+                                <img src="../imgs/east_11.png">
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#">
+                                <img src="../imgs/east_12.png">
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#">
+                                <img src="../imgs/east_13.png">
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#">
+                                <img src="../imgs/east_14.png">
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#">
+                                <img src="../imgs/east_15.png">
+                            </a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="west-icon">
+                    <dl>
+                        <dt><a href="#"><img src="../imgs/west.png" alt=""></a></dt>
+                        <dd>
+                            <a href="#"><img src="../imgs/east_1.png" alt=""></a>
+                        </dd>
+                        <dd>
+                            <a href="#"><img src="../imgs/east_1.png" alt=""></a>
+                        </dd>
+                        <dd>
+                            <a href="#"><img src="../imgs/east_1.png" alt=""></a>
+                        </dd>
+                        <dd>
+                            <a href="#"><img src="../imgs/east_1.png" alt=""></a>
+                        </dd>
+                        <dd>
+                            <a href="#"><img src="../imgs/east_1.png" alt=""></a>
+                        </dd>
+                        <dd>
+                            <a href="#"><img src="../imgs/east_1.png" alt=""></a>
+                        </dd>
+                        <dd>
+                            <a href="#"><img src="../imgs/east_1.png" alt=""></a>
+                        </dd>
+                        <dd>
+                            <a href="#"><img src="../imgs/east_1.png" alt=""></a>
+                        </dd>
+                        <dd>
+                            <a href="#"><img src="../imgs/east_1.png" alt=""></a>
+                        </dd>
+                        <dd>
+                            <a href="#"><img src="../imgs/east_1.png" alt=""></a>
+                        </dd>
+                        <dd>
+                            <a href="#"><img src="../imgs/east_1.png" alt=""></a>
+                        </dd>
+                        <dd>
+                            <a href="#"><img src="../imgs/east_1.png" alt=""></a>
+                        </dd>
+                        <dd>
+                            <a href="#"><img src="../imgs/east_1.png" alt=""></a>
+                        </dd>
+                        <dd>
+                            <a href="#"><img src="../imgs/east_1.png" alt=""></a>
+                        </dd>
+                        <dd>
+                            <a href="#"><img src="../imgs/east_1.png" alt=""></a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <section class="team-logo">
+                <div>
+                    <img src="../imgs/team-logo.png" alt="">
+                </div>
+            </section>
+        </section>
+
+
+        <!-- 中间商品部分 -->
+        <section class="main-md">
+            <div class="sppg area">
+                <div class="sp-left">
+                    <div class="sppg-1">
+                        <a href="./register.html"><img src="../imgs/15579873014109265.jpg" alt=""></a>
+                    </div>
+                    <div class="sppg-3">
+                        <a href="./register.html"><img src="../imgs/15585135493453018.jpg" alt=""></a>
+                    </div>
+                    <div class="sppg-5">
+                        <a href="./register.html"><img src="../imgs/15589237624981501.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="sp-right">
+                    <div class="sppg-2">
+                        <a href="./register.html"><img src="../imgs/15556419330922206.jpg" alt=""></a>
+                    </div>
+
+                    <div class="sppg-4">
+                        <a href="./register.html"><img src="../imgs/15585135493453018.jpg" alt=""></a>
+                    </div>
+                    <div class="sppg-6">
+                        <a href="./register.html"><img src="../imgs/15589237624981501.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-bum">
+            <div class="area">
+                <div class="all-logo">
+                    <ul>
+                        <li>
+                            <a href="./register.html"><img src="../imgs/index-brand-log-02.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="./register.html"><img src="../imgs/index-brand-log-03.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="./register.html"><img src="../imgs/index-brand-log-04.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="./register.html"><img src="../imgs/index-brand-log-05.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="./register.html"><img src="../imgs/index-brand-log-07.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="./register.html"><img src="../imgs/index-brand-log-09.jpg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 推荐，可能会喜欢 部分 -->
+                <div class="you-like">
+                    <div class="hr-left-2"></div>
+                    <div class="hr-right-2"></div>
+                    <div class="like">你可能会喜欢</div>
+                </div>
+                <div class="like-box">
+                    <div class="sp-like">
+                        <div>
+                            <a href="#">
+                                <img src="../imgs/15590149362773367_375X375.jpg" alt="">
+                                <h2>NBA 火箭队 大心脏系列 休闲运动 短袖T恤</h2>
+                                <p>
+                                    <span>¥199.00</span>
+                                    <span>¥249.00</span>
+                                </p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="../imgs/15590149362773367_375X375.jpg" alt="">
+                                <h2>NBA 火箭队 大心脏系列 休闲运动 短袖T恤</h2>
+                                <p>
+                                    <span>¥199.00</span>
+                                    <span>¥249.00</span>
+                                </p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="../imgs/15590149362773367_375X375.jpg" alt="">
+                                <h2>NBA 火箭队 大心脏系列 休闲运动 短袖T恤</h2>
+                                <p>
+                                    <span>¥199.00</span>
+                                    <span>¥249.00</span>
+                                </p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="../imgs/15590149362773367_375X375.jpg" alt="">
+                                <h2>NBA 火箭队 大心脏系列 休闲运动 短袖T恤</h2>
+                                <p>
+                                    <span>¥199.00</span>
+                                    <span>¥249.00</span>
+                                </p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="../imgs/15590149362773367_375X375.jpg" alt="">
+                                <h2>NBA 火箭队 大心脏系列 休闲运动 短袖T恤</h2>
+                                <p>
+                                    <span>¥199.00</span>
+                                    <span>¥249.00</span>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="btn">
+                        <span class="btn-l"></span>
+                        <span class="btn-r"></span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- 底部介绍部分 -->
+    <footer>
+        <section class="footer area">
+            <div class="footer-t">
+                <div class="nba-lg">
+                    <a href="#">
+                        <img src="../imgs/logo_cn.png" alt="">
+                    </a>
+                </div>
+                <div class="message">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                登录/注册
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                说出你想要的
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                门店位置
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                帮助
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="official">
+                    <p>扫码关注官方微信</p>
+                    <a href="#">
+                        <img src="../imgs/footer-qrCode-btn.jpg" alt="">
+                        <div class="erweima">
+                            <em></em>
+                            <img src="../imgs/footer-wechat-qrCode.jpg" alt="">
+                        </div>
+                    </a>
+                    <p>扫码下载NBA官方APP</p>
+                    <a href="#">
+                        <img src="../imgs/footer-qrCode-btn.jpg" alt="">
+                        <div class="erweima1">
+                            <em></em>
+                            <img src="../imgs/footer-wechat-qrCode.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="information">
+                    <dl>
+                        <dt>
+							联系我们</dt>
+                        <dd>
+                            <a href="#">
+                                <span class="iconfont">&#xe68c;</span> mailto:service@nbastore.cn
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#"><span class="iconfont">&#xe68c;</span>
+                                在线客服（9:00 – 22:00）
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="#">
+                                <span class="iconfont">
+                                        &#xe608;
+                                <span>
+                                    NBASTORE官方微博</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="division area"></div>
+            <div class="foot-b">
+                <p class="p-o">
+                    <span>沪ICP备 14013659-2号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <a href="#">
+                                    <span>用条款&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 隐私政策&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 退换货政策</span>
+                                </a>
+                                </p>
+                                <p class="p-t">
+                                    <a href="#">
+                                        <img src="../imgs/icon-b.png" alt="">
+                                        <span>沪公网安备 31010802001463号 
+                                                &nbsp;&nbsp;&nbsp;&nbsp;公司证件</span>
+                                    </a>
+                                </p>
+                                <p class="p-h">
+                                    <span>©2017 NBA Media Ventures, LLC.保留所有权利。NBAStore.com.cn/NBAStore.cn上的任何部分都不得以任何形式被复制、再传播，或篡改。</span>
+                                </p>
+                                <p class="p-f">
+                                    <span>欢迎您使用NBA中国官方旗舰店网站！ NBA中国官方旗舰店网站由NBA体育文化发展(北京)有限责任公司委托上海枫泊电子商务有限公司进行运营和维护。</span>
+                                </p>
+                </div>
+        </section>
+    </footer>
+
+
+</body>
+
+</html>
+
+</html./register.html

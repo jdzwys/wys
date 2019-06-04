@@ -1,0 +1,93 @@
+footer {
+  background-color: #0a3665;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #fff;
+}
+footer .footer-t:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.footer-t div {
+  width: 280px;
+  line-height: 40px;
+  float: left;
+  padding: 30px 10px 20px 10px;
+}
+.message a,
+.information a {
+  color: #fff;
+  display: block;
+}
+.information span {
+  font-size: 16px;
+}
+.erweima img,
+.erweima1 img {
+  width: 100px;
+}
+.erweima em,
+.erweima1 em {
+  display: block;
+  border: 7px solid transparent;
+  height: 0;
+  width: 0;
+  border-right-color: #fff;
+}
+.official {
+  position: relative;
+}
+.erweima {
+  position: absolute;
+  left: 67px;
+  top: 10px;
+  display: none;
+}
+.erweima em {
+  position: absolute;
+  top: 80px;
+  left: -4px;
+}
+.erweima1 {
+  position: absolute;
+  top: 120px;
+  left: 67px;
+  display: none;
+}
+.erweima1 em {
+  position: absolute;
+  top: 70px;
+  left: -4px;
+}
+.official a:hover .erweima {
+  display: block;
+}
+.official a:hover .erweima1 {
+  display: block;
+}
+.division {
+  height: 1px;
+  background: #ccc;
+  margin: 10px 0;
+}
+.foot-b {
+  font-size: 12px;
+  line-height: 30px;
+}
+.foot-b .p-o a {
+  color: #fff;
+  font-size: 14px;
+}
+.foot-b .p-t img {
+  vertical-align: middle;
+}
+.foot-b .p-t a {
+  color: #fff;
+}
+.foot-b .p-h {
+  line-height: 15px;
+}
+.foot-b .p-f {
+  padding: 10px 0 20px;
+}

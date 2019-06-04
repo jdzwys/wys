@@ -1,0 +1,228 @@
+.main {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+.main .hr-left,
+.hr-right {
+  width: 520px;
+  height: 1px;
+  background: #ccc;
+  position: absolute;
+}
+.main .hr-left {
+  top: 12px;
+}
+.main .hr-right {
+  top: 12px;
+  right: 0;
+}
+.main .y-team {
+  font-size: 18px;
+  font-weight: 900;
+}
+.slider {
+  position: relative;
+  height: 550px;
+  overflow: hidden;
+}
+.slider .banner-pg {
+  position: absolute;
+  width: 6000px;
+}
+.slider img {
+  float: left;
+  position: relative;
+  left: -100px;
+}
+.slider .tab-l,
+.slider .tab-r {
+  display: block;
+  width: 40px;
+  height: 91px;
+}
+.slider .tab-l {
+  background: url(../imgs/icons1.png) no-repeat -10px -2489px;
+  position: absolute;
+  top: 35%;
+  left: 5%;
+}
+.slider .tab-l:hover {
+  cursor: pointer;
+}
+.slider .tab-r {
+  background: url(../imgs/icons1.png) no-repeat -133px -2489px;
+  position: absolute;
+  top: 35%;
+  right: 5%;
+}
+.slider .tab-r:hover {
+  cursor: pointer;
+}
+.slider .tab-all {
+  width: 45px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+}
+.slider .tab-all .tab-1,
+.slider .tab-all .tab-2,
+.slider .tab-all .tab-3 {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  float: left;
+  margin-left: 5px;
+}
+.slider .tab-all .tab-1:hover,
+.slider .tab-all .tab-2:hover,
+.slider .tab-all .tab-3:hover {
+  cursor: pointer;
+}
+.all-team {
+  width: 1100px;
+  float: left;
+  padding-top: 5px;
+}
+.all-team dt,
+.all-team dd {
+  float: left;
+  padding: 10px;
+}
+.all-team dt img,
+.all-team dd img {
+  width: 48px;
+  display: block;
+}
+.team-logo > div {
+  width: 80px;
+  float: right;
+  padding-right: 20px;
+}
+.main-md:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+}
+.sp-left {
+  width: 595px;
+  float: left;
+}
+.sp-right {
+  width: 590px;
+  float: right;
+}
+.sp-left img,
+.sp-right img {
+  width: 590px;
+  margin-top: 10px;
+}
+.main-bum .all-logo {
+  width: 600px;
+  margin: 0 auto;
+}
+.main-bum .all-logo ul:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+}
+.main-bum .all-logo ul > li {
+  float: left;
+  margin: 10px 0;
+}
+.main-bum .all-logo ul > li img {
+  width: 100px;
+}
+.you-like {
+  text-align: center;
+  position: relative;
+  margin-top: 10px;
+}
+.you-like .hr-left-2,
+.you-like .hr-right-2 {
+  width: 450px;
+  height: 1px;
+  background: #ccc;
+  position: absolute;
+}
+.you-like .hr-left-2 {
+  left: 80px;
+  top: 15px;
+}
+.you-like .hr-right-2 {
+  right: 80px;
+  top: 15px;
+}
+.you-like .like {
+  font-size: 18px;
+  font-weight: 900;
+}
+.sp-like:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+}
+.like-box {
+  position: relative;
+  width: 1040px;
+  margin: 0 auto;
+}
+.like-box .sp-like {
+  width: 1000px;
+  margin: 0 auto;
+}
+.like-box .sp-like div {
+  float: left;
+  margin: 20px 10px;
+  width: 180px;
+}
+.like-box .sp-like div a {
+  display: block;
+}
+.like-box .sp-like div a img {
+  width: 180px;
+}
+.like-box .sp-like div a h2 {
+  font-size: 12px;
+  line-height: 14px;
+  padding: 14px 5% 0 5%;
+  margin: 0;
+  height: 28px;
+  color: #333;
+}
+.like-box .sp-like div a p {
+  padding: 14px 5% 0 5%;
+  color: #000;
+}
+.like-box .sp-like div a p span:nth-child(1) {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ec003d;
+}
+.like-box .sp-like div a p span:nth-child(2) {
+  text-decoration: line-through;
+  padding-left: 5px;
+}
+.like-box .btn > span {
+  position: absolute;
+  display: block;
+  width: 14px;
+  height: 32px;
+  background: red;
+  cursor: pointer;
+}
+.like-box .btn .btn-l {
+  bottom: 140px;
+  background: url(../imgs/icons1.png) no-repeat -346px -87px;
+}
+.like-box .btn .btn-r {
+  background: url(../imgs/icons1.png) no-repeat -390px -87px;
+  right: 0;
+  bottom: 140px;
+}

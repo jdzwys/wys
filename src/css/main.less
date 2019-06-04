@@ -1,0 +1,258 @@
+// main css部分
+
+
+
+// 选择你的球队
+.main{
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+.main .hr-left,.hr-right{
+    width: 520px;
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+}
+.main .hr-left{
+    top: 12px;
+}
+.main .hr-right{
+    top: 12px;
+    right: 0;
+}
+.main .y-team{
+    font-size: 18px;
+    font-weight: 900;
+}
+//banner图
+.slider{
+ position: relative;
+//  width: 1440px;
+ height: 550px;
+ overflow: hidden;
+.banner-pg{
+     position: absolute;
+     width: 6000px;
+ }
+
+      img{
+    float: left;
+    // width: 100%;
+    position: relative;
+    left: -100px;
+    // margin-left: -720px;
+     }
+    .tab-l,.tab-r{
+    display: block;
+    width: 40px;
+    height: 91px;
+    }
+    .tab-l{
+        background:url(../imgs/icons1.png) no-repeat -10px -2489px;
+        position: absolute;
+        top: 35%;
+        left: 5%;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .tab-r{
+        background: url(../imgs/icons1.png) no-repeat -133px -2489px;
+        position: absolute;
+        top: 35%;
+        right: 5%;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .tab-all{
+        width: 45px;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+
+        .tab-1,.tab-2,.tab-3{
+            display:block;
+            width: 10px;
+            height: 10px;
+            background: #fff;
+            border-radius: 50%;
+            float: left;
+            margin-left: 5px;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+
+// 球队图标部分
+
+.all-team{
+    width: 1100px;
+    float: left;
+    padding-top: 5px;
+
+    dt,dd{
+        float: left;
+        padding: 10px;
+        img{
+            width: 48px;
+            display: block;
+            
+        }
+    }
+
+}
+.team-logo>div{
+    width: 80px;
+    float: right;
+    padding-right: 20px;
+}
+
+// 商品图部分
+.main-md:after{
+    content: "";clear: both;display: block;height: 0;
+}
+
+.sp-left{
+    width: 595px;
+    float: left;
+}
+.sp-right{
+    width: 590px;
+    float: right;
+}
+.sp-left img,.sp-right img{
+    width: 590px;
+    margin-top: 10px;
+}
+
+
+// 各种图标
+
+.main-bum .all-logo{
+    width: 600px;
+    margin: 0 auto;
+    ul:after{
+        content: "";clear: both;display: block;height: 0;
+    }
+
+    ul>li{
+        float: left;
+        margin: 10px 0;
+
+        img{
+            width: 100px;
+        }
+    }
+}
+.you-like{
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+    // .hr-left-2{
+    //     height: 20px;background: red;
+    // }
+    // .hr-right-2{
+    //     height: 20px;background: red;
+    // }
+    .hr-left-2,.hr-right-2{
+        width: 450px;
+        height: 1px;
+        background: #ccc;
+        position: absolute;
+    }
+    .hr-left-2{
+        left: 80px;
+        top: 15px;
+    }
+    .hr-right-2{
+        right: 80px;
+        top: 15px;
+    }
+
+    .like{
+        font-size: 18px;
+        font-weight: 900;
+    }
+}
+
+// 推荐商品部分
+.sp-like:after{
+    content: "";clear: both;display: block;height: 0;
+}
+.like-box{
+    position: relative;
+    width: 1040px;
+    margin: 0 auto;
+
+    .sp-like{
+        width: 1000px;
+        margin: 0 auto;
+        div{
+            float: left;
+            margin: 20px 10px;
+            width: 180px;
+
+            a{
+                display: block;
+
+                img{
+                    width: 180px;
+                    
+                }
+                h2{
+                    font-size: 12px;
+                    line-height: 14px;
+                    padding: 14px 5% 0 5%;
+                    margin: 0;
+                    height: 28px;
+                    color: #333;
+                }
+                p{
+                    padding: 14px 5% 0 5%;
+                    color: #000;
+                }
+                p span:nth-child(1){
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #ec003d;
+                    
+                }
+                p span:nth-child(2){
+                    text-decoration: line-through;
+                    padding-left: 5px;
+                    
+                }
+            }
+        }
+    }
+    .btn>span{
+        position: absolute;
+        display: block;
+        width: 14px;
+        height: 32px;
+        background: red;
+        cursor: pointer;
+    }
+    .btn .btn-l{
+        bottom: 140px;
+        background: url(../imgs/icons1.png) no-repeat -346px -87px;
+        
+    }
+    .btn .btn-r{
+        background: url(../imgs/icons1.png) no-repeat -390px -87px;
+        right: 0;
+        bottom: 140px;
+    }
+
+}
+
+

@@ -1,0 +1,686 @@
+/* 重置样式 reset css */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: 14px;
+    font-family: "\5FAE\8F6F\96C5\9ED1", "Microsoft Yahei", "微软雅黑", SimSun, Arial, tahoma, arial !important;
+    color: #343434;
+    background: pink;
+}
+
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+dl,
+li,
+dt,
+dd,
+fieldset,
+legend,
+input,
+img,
+select {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img,
+fieldset {
+    border: 0px;
+}
+
+i,
+b,
+em,
+strong,
+s,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    display: block;
+    visibility: hidden;
+}
+
+.area {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.nav {
+    height: 130px;
+    background: #0a3665;
+}
+
+.nav_top {
+    height: 30px;
+    background: #0a3665;
+}
+
+.nav_top .top {
+    height: 30px;
+    line-height: 30px;
+}
+
+.nav_top .top ul {
+    float: right;
+}
+
+.nav_top .top ul>li {
+    float: left;
+}
+
+.nav_top .top a {
+    font-size: 13px;
+    color: #fff;
+    padding: 0 12px;
+}
+
+.nav_top .top b {
+    color: #fff;
+}
+
+.md {
+    height: 100px;
+    position: relative;
+    line-height: 100px;
+}
+
+.md .logo {
+    position: absolute;
+    top: 21px;
+}
+
+.md #search {
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    top: 30px;
+    width: 600px;
+    height: 40px;
+    font-size: 15px;
+    color: #000;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.md .nav_text1 {
+    position: absolute;
+    left: 80%;
+}
+
+.md .nav_text2 {
+    position: absolute;
+    left: 88%;
+}
+
+.md .nav_text1,
+.md .nav_text2 {
+    text-decoration: underline;
+    font-size: 18px;
+    color: #fff;
+}
+
+.md .search_pg {
+    position: absolute;
+    top: 40px;
+    left: 75%;
+    margin-left: -30px;
+}
+
+.nav_btm {
+    background: #0669b2;
+}
+
+.nav_btm .btm {
+    height: 35px;
+}
+
+.nav_btm .btm .btm>ul {
+    position: fixed;
+}
+
+.nav_btm .btm ul>li:nth-child(1):hover b {
+    border-bottom-color: #fff;
+}
+
+.nav_btm .btm ul>li:nth-child(1):hover .ball_team {
+    height: 500px;
+}
+
+.nav_btm .btm ul>li:nth-child(3):hover i {
+    border-bottom-color: #fff;
+}
+
+.nav_btm .btm ul>li:nth-child(3):hover .brand {
+    height: 250px;
+}
+
+.nav_btm .btm ul>li:nth-child(5):hover s {
+    border-bottom-color: #fff;
+}
+
+.nav_btm .btm ul>li:nth-child(5):hover .polo_shirt {
+    height: 120px;
+}
+
+.nav_btm .btm ul>li:nth-child(6):hover .trigon {
+    border-bottom-color: #fff;
+}
+
+.nav_btm .btm ul>li:nth-child(6):hover .wear {
+    height: 200px;
+}
+
+.nav_btm .btm ul>li:nth-child(7):hover .trigon1 {
+    border-bottom-color: #fff;
+}
+
+.nav_btm .btm ul>li:nth-child(7):hover .pants {
+    height: 130px;
+}
+
+.nav_btm .btm ul>li:nth-child(8):hover .trigon2 {
+    border-bottom-color: #fff;
+}
+
+.nav_btm .btm ul>li:nth-child(8):hover .woman {
+    height: 290px;
+}
+
+.nav_btm .btm ul>li:nth-child(9):hover .trigon3 {
+    border-bottom-color: #fff;
+}
+
+.nav_btm .btm ul>li:nth-child(9):hover .child {
+    height: 290px;
+}
+
+.nav_btm .btm ul>li:nth-child(10):hover .trigon4 {
+    border-bottom-color: #fff;
+}
+
+.nav_btm .btm ul>li:nth-child(10):hover .shoes {
+    height: 120px;
+}
+
+.nav_btm .btm ul>li:nth-child(11):hover .trigon5 {
+    border-bottom-color: #fff;
+}
+
+.nav_btm .btm ul>li:nth-child(11):hover .ball {
+    height: 120px;
+}
+
+.nav_btm .btm ul>li:nth-child(12):hover .trigon6 {
+    border-bottom-color: #fff;
+}
+
+.nav_btm .btm ul>li:nth-child(12):hover .accessories {
+    height: 480px;
+}
+
+.nav_btm .btm>ul>li {
+    float: left;
+    position: relative;
+}
+
+.nav_btm .btm>ul>li>b {
+    position: absolute;
+    left: 36px;
+    display: block;
+    border: 10px solid transparent;
+    width: 0;
+    height: 0;
+    transition: all .6s;
+}
+
+.nav_btm .btm>ul>li>a {
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 20px 0 20px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.nav_btm .btm>ul>li>a:hover {
+    background: #06558e;
+    color: #ec003d;
+}
+
+.ball_team {
+    overflow: hidden;
+    width: 440px;
+    height: 0px;
+    position: absolute;
+    left: -30px;
+    top: 55px;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.ball_team .sub_master {
+    float: left;
+    width: 200px;
+    padding: 0 10px 0 10px;
+}
+
+.ball_team .sub_master h3 {
+    margin: 10px 0 0 35px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #06558e;
+}
+
+.ball_team .sub_master li>a {
+    display: block;
+    width: 200px;
+    color: #808285;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.ball_team .sub_west {
+    float: right;
+    width: 200px;
+    padding: 0 10px 0 10px;
+}
+
+.ball_team .sub_west h3 {
+    margin: 10px 0 0 35px;
+    font-weight: 800;
+    color: #ec003d;
+    font-size: 18px;
+}
+
+.ball_team .sub_west li>a {
+    display: block;
+    width: 200px;
+    color: #808285;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.ball_team li>a:hover {
+    background: #f6f6f6;
+    color: #00559a;
+    font-weight: 500;
+}
+
+.btm>ul>li>i {
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    display: block;
+    border: 10px solid transparent;
+    width: 0;
+    height: 0;
+    transition: all .6s;
+}
+
+.brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -110px;
+    top: 55px;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    width: 220px;
+    transition: all .5s;
+    border-radius: 5px;
+}
+
+.brand li>a {
+    display: block;
+    font-size: 14px;
+    color: #808285;
+    line-height: 35px;
+    margin-top: 5px;
+}
+
+.brand li>a:hover {
+    background: #f6f6f6;
+    color: #00559a;
+    font-weight: 500;
+}
+
+.polo_shirt {
+    position: absolute;
+    left: -70px;
+    top: 55px;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    width: 220px;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.polo_shirt li>a {
+    display: block;
+    font-size: 14px;
+    color: #808285;
+    line-height: 35px;
+    margin-top: 5px;
+}
+
+.btm>ul>li>s {
+    position: absolute;
+    left: 25px;
+    display: block;
+    border: 10px solid transparent;
+    width: 0;
+    height: 0;
+    transition: all .6s;
+}
+
+.polo_shirt li>a:hover {
+    background: #f6f6f6;
+    color: #00559a;
+    font-weight: 500;
+}
+
+.wear {
+    position: absolute;
+    left: -70px;
+    top: 55px;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    width: 220px;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.wear li>a {
+    display: block;
+    font-size: 14px;
+    color: #808285;
+    line-height: 35px;
+    margin-top: 5px;
+}
+
+.btm>ul>li>.trigon {
+    position: absolute;
+    left: 25px;
+    display: block;
+    border: 10px solid transparent;
+    width: 0;
+    height: 0;
+    transition: all .6s;
+}
+
+.wear li>a:hover {
+    background: #f6f6f6;
+    color: #00559a;
+    font-weight: 500;
+}
+
+.pants {
+    position: absolute;
+    left: -70px;
+    top: 55px;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    width: 220px;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.pants li>a {
+    display: block;
+    font-size: 14px;
+    color: #808285;
+    line-height: 35px;
+    margin-top: 5px;
+}
+
+.btm>ul>li>.trigon1 {
+    position: absolute;
+    left: 25px;
+    display: block;
+    border: 10px solid transparent;
+    width: 0;
+    height: 0;
+    transition: all .6s;
+}
+
+.pants li>a:hover {
+    background: #f6f6f6;
+    color: #00559a;
+    font-weight: 500;
+}
+
+.woman {
+    position: absolute;
+    left: -70px;
+    top: 55px;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    width: 220px;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.woman li>a {
+    display: block;
+    font-size: 14px;
+    color: #808285;
+    line-height: 35px;
+    margin-top: 5px;
+}
+
+.btm>ul>li>.trigon2 {
+    position: absolute;
+    left: 25px;
+    display: block;
+    border: 10px solid transparent;
+    width: 0;
+    height: 0;
+    transition: all .6s;
+}
+
+.woman li>a:hover {
+    background: #f6f6f6;
+    color: #00559a;
+    font-weight: 500;
+}
+
+.child {
+    position: absolute;
+    left: -50px;
+    top: 55px;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    width: 220px;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.child li>a {
+    display: block;
+    font-size: 14px;
+    color: #808285;
+    line-height: 35px;
+    margin-top: 5px;
+}
+
+.btm>ul>li>.trigon3 {
+    position: absolute;
+    left: 50px;
+    display: block;
+    border: 10px solid transparent;
+    width: 0;
+    height: 0;
+    transition: all .6s;
+}
+
+.child li>a:hover {
+    background: #f6f6f6;
+    color: #00559a;
+    font-weight: 500;
+}
+
+.shoes {
+    position: absolute;
+    left: 50%;
+    margin-left: -110px;
+    top: 55px;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    width: 220px;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.shoes li>a {
+    display: block;
+    font-size: 14px;
+    color: #808285;
+    line-height: 35px;
+    margin-top: 5px;
+}
+
+.btm>ul>li>.trigon4 {
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    display: block;
+    border: 10px solid transparent;
+    width: 0;
+    height: 0;
+    transition: all .6s;
+}
+
+.shoes li>a:hover {
+    background: #f6f6f6;
+    color: #00559a;
+    font-weight: 500;
+}
+
+.ball {
+    position: absolute;
+    left: 50%;
+    margin-left: -110px;
+    top: 55px;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    width: 220px;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.ball li>a {
+    display: block;
+    font-size: 14px;
+    color: #808285;
+    line-height: 35px;
+    margin-top: 5px;
+}
+
+.btm>ul>li>.trigon5 {
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    display: block;
+    border: 10px solid transparent;
+    width: 0;
+    height: 0;
+    transition: all .6s;
+}
+
+.ball li>a:hover {
+    background: #f6f6f6;
+    color: #00559a;
+    font-weight: 500;
+}
+
+.accessories {
+    position: absolute;
+    left: 50%;
+    margin-left: -110px;
+    top: 55px;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    width: 220px;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.accessories li>a {
+    display: block;
+    font-size: 14px;
+    color: #808285;
+    line-height: 35px;
+    margin-top: 5px;
+}
+
+.btm>ul>li>.trigon6 {
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    display: block;
+    border: 10px solid transparent;
+    width: 0;
+    height: 0;
+    transition: all .6s;
+}
+
+.accessories li>a:hover {
+    background: #f6f6f6;
+    color: #00559a;
+    font-weight: 500;
+}

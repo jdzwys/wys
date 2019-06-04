@@ -1,0 +1,303 @@
+.introduce{
+    width: 100%;
+
+
+    .introduce-t{
+        padding: 20px 5%;
+        // 小标题
+        p{
+            margin-left: -5px;
+            
+            line-height: 1.42857143;
+            a{
+                color: #333;font-size: 14px;
+                span{
+                    color: #00559a;
+                }
+            }
+        }
+    }
+
+    .message{
+        position: relative;
+    }
+
+    .mes-l{
+
+        float: left;
+        width: 100%;
+
+        .s-pg{
+            float: left;
+            height: 220px;
+            margin-top: 30px;
+
+            .s-t{
+                border: 2px solid #00559a;
+                margin: 10px 0;
+                cursor: pointer;
+                img{
+                    display: block;
+                    
+                }
+
+            }
+            .s-b{
+                margin: 20px 0 10px 0;
+                cursor: pointer;
+                border: 2px solid #d1d3d4;
+                img{
+                    display: block;
+                }
+            }
+        }
+        .b-pg{
+            float: left;
+            div{
+                
+                margin-left: 50px;
+            }
+            .b-one{
+                width: 450px;
+                // border: 1px solid #d1d3d4;
+            }
+            .b-two{
+                width: 450px;padding-left: 10px;display: none;
+            }
+        }
+
+    }
+    .mes-r{
+        float: right;
+        width: 44%;
+        position: absolute;
+        left: 52%;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #ccc;
+    }
+}
+.mes-r-t .id{
+    color: #58595b;
+    font-size: 12px;
+    margin: 0 0 10px;
+}
+.mes-r-t {
+
+    h1{
+        font-weight: normal;
+        font-size: 24px;
+        padding: 0 6% 25px 0;
+    }
+    .price-{
+        color: #00559a;
+        font-size: 24px;
+        padding: 0 0 10px;
+        border-bottom: 1px solid #ccc;
+        &>span:last-of-type{
+            font-size: 67%;
+            color: #808285;
+            text-decoration: line-through;
+            margin-left: 5px;
+        }
+    }
+    .color{
+        height: 36px;
+        line-height: 36px;
+        color: #58595b;
+        font-size: 14px;
+        padding-top: 20px;
+        img{
+            margin-left: 15px;
+            display: inline-block;
+            border: 2px solid #00559a;
+        }
+    }
+    // 尺寸
+    .size{
+        color: #58595b;
+        vertical-align: middle;
+        margin-top: 10px;
+        span{
+            width: 50px;
+            height: 32px;
+            border: 2px solid #d1d3d4;
+            margin-left: 10px;
+            display: inline-block;
+            vertical-align: bottom;
+            text-align: center;
+            font-size: 14px;
+            line-height: 32px;
+            cursor: pointer;
+
+        }
+                    
+        i{
+            color: #58595b;
+            font-size: 12px;
+            line-height: 12px;
+            border-bottom: 2px solid #d1d3d4;
+            cursor: pointer;
+            display: inline-block;
+        }
+    }
+
+    // 数量
+    .number-{
+        height: 36px;
+        line-height: 36px;
+        color: #58595b;
+        font-size: 14px;
+        margin: 20px 0;
+
+        span{
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            color: #fff;
+            cursor: pointer;
+            text-align: center;
+            &:nth-child(1){
+                    background-color: #b4b4b4;
+                    margin-left: 15px;
+                    
+                }
+            &:nth-child(2){
+            border: 1px solid #808285;
+            }
+            &:nth-child(3){
+                background: #00539c;
+                }
+        }
+         
+    }
+
+    // 购买加入购物车按钮
+    .btn-{
+        margin-top: 40px;
+        width: 345px;
+        &>.shop{
+            margin-right: 12px;
+            background-color: #ec003d;
+            color: #fff;
+            min-width: 143px;
+            height: 40px;
+            border: 0;
+            border-radius: 3px;
+        }
+        &>.join{
+            border-radius: 3px;
+            border: 0;
+            background-color: #00559a;
+            min-width: 143px;
+            height: 40px;
+        }
+    }
+
+//  价格说明部分
+    .tell{
+        h6{
+            font-size: 14px;
+            color: #58595b;
+            text-decoration: underline;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+        p{
+            font-size: 12px;
+            color: #ccc;
+            line-height: 1.6em;
+        }
+    }
+
+}
+
+// 商品描述
+.s-title{
+    margin: 170px 170px 130px ;
+    h5{
+        color: #005faf;
+        font-size: 20px;
+        margin-bottom:  30px ;
+        font-weight: bold;
+    }
+    p{
+        font-weight: bold;
+    }
+}
+// 历史记录部分
+.history{
+    background: #f6f6f6;
+    margin-top: 10px;
+    padding-bottom: 30px;
+
+        .history-box{
+        padding: 30px 5% 20px 5%;
+        max-width: 1296px;}
+
+
+            // 左边部分
+    .history-l{
+        float: left;
+        width: 22%;
+        padding-top: 8%;
+        text-align: center;
+
+        h2{
+            color: #0a5798;
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: bold;
+            padding: 14px 0;
+        }
+        .btn{
+            color: #00559a;
+            border: 2px solid #00559a;
+            background-color: transparent;
+            min-width: 139px;
+            height: 36px;
+
+            &:hover{
+            border-color: #0073d1;
+            color: #0073d1;
+            cursor: pointer;
+            }
+        }
+    }
+
+    // 右边部分
+    .history-r{
+        float: right;
+        width: 78%;
+        // overflow: hidden;
+        ul li{
+            width: 18%;
+            float: left;
+            padding-right: 2%;
+
+            a{
+                display: block;
+
+                img{
+                    width: 150px;
+                }
+                h6{
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #000;
+                    padding: 14px 5% 0 5%;
+                    margin: 0;
+                    height: 28px;
+                    overflow: hidden;
+                }
+                p{
+                    font-size: 16px;
+                    font-weight: bold;
+                    padding: 14px 5% 0 5%;
+                    color: #000;
+                }
+            }
+        }
+
+    }
+    }
+

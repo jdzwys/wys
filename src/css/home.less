@@ -1,0 +1,687 @@
+/* 重置样式 reset css */
+html,body{
+    width:100%;
+    height: 100%;
+}
+body{
+    font-size: 14px;
+    font-family: "\5FAE\8F6F\96C5\9ED1","Microsoft Yahei","微软雅黑",SimSun,Arial,tahoma,arial!important;
+    color: #343434;
+    // background: tomato;
+}
+body, div, p, h1, h2, h3, h4, h5, h6, ol, ul, dl, li, dt, dd, fieldset, legend, input, img, select {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img,fieldset {
+    border: 0px;
+}
+
+i,b,em,strong,s,h1,h2,h3,h4,h5,h6{
+    font-style:normal;
+    font-weight:normal;
+}
+.clear::after{
+    content:"";
+    clear: both;
+    height: 0;
+    overflow:hidden;
+    display: block;
+    visibility:hidden
+
+}
+
+
+.area{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+// 导航栏 top部分
+.nav{
+    height: 130px;
+    background: #0a3665;
+}
+.nav_top {
+    height: 30px;
+    background: #0a3665;
+
+    .top{
+        height: 30px;
+        line-height: 30px;
+        ul{
+            float: right;
+        }
+        ul>li{
+            float: left;
+        }
+        a{
+            font-size: 13px;
+            color: #fff;
+            padding: 0 12px;
+        }
+        b{
+            color: #fff;
+        }
+    }
+}
+// 导航栏 top部分结束
+// 导航栏 md 部分
+
+.md{
+    height: 100px;
+    position: relative;
+    line-height: 100px;
+
+    .logo{
+        position: absolute;
+        top: 21px;
+    }
+    #search{
+        position: absolute;
+        left: 50%;
+        margin-left: -300px;
+        top:30px;
+        width: 600px;
+        height: 40px;
+        font-size: 15px;
+        color: #000;
+        border-radius: 5px;
+        padding-left: 10px;
+    }
+
+    .nav_text1{
+        position: absolute;
+        left: 80%;
+    }
+    .nav_text2{
+        position: absolute;
+        left:88%;
+    }
+    .nav_text1,.nav_text2{
+        text-decoration: underline;
+        font-size: 18px;
+        color: #fff;
+    }
+    .search_pg{
+        position: absolute;
+        top: 40px;
+        left: 75%;
+        margin-left: -30px;
+    }
+}
+//导航栏md 结束
+
+// nav_btm 部分
+.nav_btm{
+    background: #0669b2;
+    
+
+    .btm{
+        height: 35px;
+        .btm>ul{
+            position: relative;
+        }
+        // 选择球队的悬停效果
+        ul>li:nth-child(1):hover b{
+            border-bottom-color: #fff;
+        }
+        ul>li:nth-child(1):hover .ball_team{
+            height: 500px;
+            box-shadow: 3px 3px 3px #aaa;
+            z-index: 1000;
+        }
+
+        // 品牌的悬停效果
+        ul>li:nth-child(3):hover i{
+            border-bottom-color: #fff;
+        }
+        ul>li:nth-child(3):hover .brand{
+            height: 250px;
+            box-shadow: 3px 3px 3px #aaa;
+            z-index: 1000;
+        }
+        // 球衣的悬停效果
+        ul>li:nth-child(5):hover s{
+            border-bottom-color: #fff;
+        }
+
+        ul>li:nth-child(5):hover .polo_shirt{
+            // display: block;
+            height: 120px;
+            box-shadow: 3px 3px 3px #aaa;
+            z-index: 1000;
+        }
+        // 上装悬停效果
+        ul>li:nth-child(6):hover .trigon{
+            border-bottom-color: #fff;
+        }
+        ul>li:nth-child(6):hover .wear{
+            // display: block;
+            height: 200px;
+            box-shadow: 3px 3px 3px #aaa;
+            z-index: 1000;
+        }
+        // 下装悬停效果
+        ul>li:nth-child(7):hover .trigon1{
+            border-bottom-color: #fff;
+        }
+        ul>li:nth-child(7):hover .pants{
+            // display: block;
+            height: 130px;
+            box-shadow: 3px 3px 3px #aaa;
+            z-index: 1000;
+        }
+        // 女装悬停效果
+        ul>li:nth-child(8):hover .trigon2{
+            border-bottom-color: #fff;
+        }
+        ul>li:nth-child(8):hover .woman{
+            // display: block;
+            height: 290px;
+            box-shadow: 3px 3px 3px #aaa;
+            z-index: 1000;
+        }
+        // 童装悬浮效果
+        ul>li:nth-child(9):hover .trigon3{
+            border-bottom-color: #fff;
+        }
+        ul>li:nth-child(9):hover .child{
+            // display: block;
+            height: 290px;
+            box-shadow: 3px 3px 3px #aaa;
+            z-index: 1000;
+        }
+        // 鞋类悬浮效果
+        ul>li:nth-child(10):hover .trigon4{
+            border-bottom-color: #fff;
+            
+        }
+        ul>li:nth-child(10):hover .shoes{
+            // display: block;
+            height: 120px;
+            box-shadow: 3px 3px 3px #aaa;
+            z-index: 1000;
+        }
+        // 球类悬浮效果
+        ul>li:nth-child(11):hover .trigon5{
+            border-bottom-color: #fff;
+        }
+        ul>li:nth-child(11):hover .ball{
+            // display: block;
+            height: 120px;
+            box-shadow: 3px 3px 3px #aaa;
+            z-index: 1000;
+        }
+        // 配件悬浮效果
+        ul>li:nth-child(12):hover .trigon6{
+            border-bottom-color: #fff;
+        }
+        ul>li:nth-child(12):hover .accessories{
+            // display: block;
+            height: 480px;
+            box-shadow: 3px 3px 3px #aaa;
+            z-index: 1000;
+        }
+
+        
+
+
+
+        >ul>li{
+            float: left;
+            position: relative;
+
+            >b{
+                    position: absolute;
+                    left: 36px;
+                    display: block;
+                    border: 10px solid transparent;
+                    width: 0;
+                    height: 0;
+                    transition: all .6s;
+            }
+
+            >a{
+                height: 35px;
+                line-height: 35px;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 600;
+                padding: 0 20px 0 20px;
+                display: block;
+                box-sizing: border-box;
+            }
+            >a:hover{
+                background: #06558e;
+                color: #ec003d;
+            }
+            
+        }
+    }
+}
+
+
+
+// 选择球队 二级导航
+.ball_team{
+    overflow: hidden;
+    width: 440px;
+    height: 0px;
+    position: absolute;
+    left: -30px;
+    top:55px;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    // display: none;
+    transition: all .5s;
+
+    .sub_master{
+        float: left;
+        width: 200px;
+        padding: 0 10px 0 10px;
+        
+        h3{
+            margin: 10px 0 0 35px;
+            font-size: 18px;
+            font-weight: 800;
+            color:rgb(6, 85, 142);
+        }
+
+
+        li>a{
+            display: block;
+            width: 200px;
+            color: #808285;
+            font-size: 14px;
+            line-height: 30px;
+        }
+    }
+    .sub_west{
+        float: right;
+        width: 200px;
+        padding: 0 10px 0 10px;
+        
+        h3{
+            margin: 10px 0 0 35px;
+            font-weight: 800;
+            color: #ec003d;
+            font-size: 18px;
+        }
+
+        li>a{
+            display: block;
+            width: 200px;
+            color: #808285;
+            font-size: 14px;
+            line-height: 30px;
+        }
+    }
+}
+.ball_team li>a:hover{
+    background:#f6f6f6;
+    color: #00559a;
+    font-weight: 500;
+}
+
+// 品牌二级导航
+.btm>ul>li>i{
+    position: absolute;
+        left: 50%;
+        margin-left: -10px;
+        display: block;
+        border: 10px solid transparent;
+        width: 0;
+        height: 0;
+        transition: all .6s;
+}
+
+.brand{
+    position: absolute;
+    left: 50%;
+    margin-left: -110px;
+    top: 55px;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    width: 220px;
+    transition: all .5s;
+    border-radius: 5px;
+    li>a{
+        display: block;
+        font-size: 14px;
+        color: #808285;
+        line-height: 35px;
+        margin-top: 5px;
+    }
+}
+.brand li>a:hover{
+    background:#f6f6f6;
+    color: #00559a;
+    font-weight: 500;
+}
+
+// 球衣二级导航
+.polo_shirt{
+    position: absolute;
+    left: 50%;
+    margin-left: -110px;
+    top: 55px;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    width: 220px;
+    border-radius: 5px;
+    transition: all .5s;
+
+    li>a{
+        display: block;
+        font-size: 14px;
+        color: #808285;
+        line-height: 35px;
+        margin-top: 5px;
+    }
+}
+.btm>ul>li>s{
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    display: block;
+    border: 10px solid transparent;
+    // border-bottom-color: red;
+    width: 0;
+    height: 0;
+    transition: all .6s;
+}
+.polo_shirt li>a:hover{
+    background:#f6f6f6;
+    color: #00559a;
+    font-weight: 500;
+}
+
+// 上装二级导航
+.wear{
+    position: absolute;
+    left: -70px;
+    top: 55px;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    width: 220px;
+    border-radius: 5px;
+    transition: all .5s;
+
+    li>a{
+        display: block;
+        font-size: 14px;
+        color: #808285;
+        line-height: 35px;
+        margin-top: 5px;
+    }
+}
+.btm>ul>li>.trigon{
+    position: absolute;
+    left: 25px;
+    display: block;
+    border: 10px solid transparent;
+    // border-bottom-color: red;
+    width: 0;
+    height: 0;
+    transition: all .6s;
+}
+.wear li>a:hover{
+    background:#f6f6f6;
+    color: #00559a;
+    font-weight: 500;
+}
+
+// 下装二级导航
+
+.pants{
+    position: absolute;
+    left: -70px;
+    top: 55px;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    width: 220px;
+    border-radius: 5px;
+    transition: all .5s;
+
+    li>a{
+        display: block;
+        font-size: 14px;
+        color: #808285;
+        line-height: 35px;
+        margin-top: 5px;
+    }
+}
+.btm>ul>li>.trigon1{
+    position: absolute;
+    left: 25px;
+    display: block;
+    border: 10px solid transparent;
+    // border-bottom-color: red;
+    width: 0;
+    height: 0;
+    transition: all .6s;
+}
+.pants li>a:hover{
+    background:#f6f6f6;
+    color: #00559a;
+    font-weight: 500;
+}
+
+// 女装二级导航
+.woman{
+    position: absolute;
+    left: -70px;
+    top: 55px;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    width: 220px;
+    border-radius: 5px;
+    transition: all .5s;
+
+    li>a{
+        display: block;
+        font-size: 14px;
+        color: #808285;
+        line-height: 35px;
+        margin-top: 5px;
+    }
+}
+.btm>ul>li>.trigon2{
+    position: absolute;
+    left: 25px;
+    display: block;
+    border: 10px solid transparent;
+    // border-bottom-color: red;
+    width: 0;
+    height: 0;
+    transition: all .6s;
+}
+.woman li>a:hover{
+    background:#f6f6f6;
+    color: #00559a;
+    font-weight: 500;
+}
+// 童装二级导航
+.child{
+    position: absolute;
+    left: -50px;
+    top: 55px;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    width: 220px;
+    border-radius: 5px;
+    transition: all .5s;
+
+    li>a{
+        display: block;
+        font-size: 14px;
+        color: #808285;
+        line-height: 35px;
+        margin-top: 5px;
+    }
+}
+.btm>ul>li>.trigon3{
+    position: absolute;
+    left: 50px;
+    display: block;
+    border: 10px solid transparent;
+    // border-bottom-color: red;
+    width: 0;
+    height: 0;
+    transition: all .6s;
+}
+.child li>a:hover{
+    background:#f6f6f6;
+    color: #00559a;
+    font-weight: 500;
+}
+// 鞋类二级导航
+.shoes{
+    position: absolute;
+    left: 50%;
+    margin-left: -110px;
+    top: 55px;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    width: 220px;
+    border-radius: 5px;
+    transition: all .5s;
+
+    li>a{
+        display: block;
+        font-size: 14px;
+        color: #808285;
+        line-height: 35px;
+        margin-top: 5px;
+    }
+}
+.btm>ul>li>.trigon4{
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    display: block;
+    border: 10px solid transparent;
+    // border-bottom-color: red;
+    width: 0;
+    height: 0;
+    transition: all .6s;
+}
+.shoes li>a:hover{
+    background:#f6f6f6;
+    color: #00559a;
+    font-weight: 500;
+}
+// 球类二级导航
+
+.ball{
+    position: absolute;
+    left: 50%;
+    margin-left: -110px;
+    top: 55px;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    width: 220px;
+    border-radius: 5px;
+    transition: all .5s;
+
+    li>a{
+        display: block;
+        font-size: 14px;
+        color: #808285;
+        line-height: 35px;
+        margin-top: 5px;
+    }
+}
+.btm>ul>li>.trigon5{
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    display: block;
+    border: 10px solid transparent;
+    // border-bottom-color: red;
+    width: 0;
+    height: 0;
+    transition: all .6s;
+}
+.ball li>a:hover{
+    background:#f6f6f6;
+    color: #00559a;
+    font-weight: 500;
+}
+
+
+// 配件二级导航
+
+.accessories{
+    position: absolute;
+    left: 50%;
+    margin-left: -110px;
+    top: 55px;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+    width: 220px;
+    border-radius: 5px;
+    transition: all .5s;
+
+    li>a{
+        display: block;
+        font-size: 14px;
+        color: #808285;
+        line-height: 35px;
+        margin-top: 5px;
+    }
+}
+.btm>ul>li>.trigon6{
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    display: block;
+    border: 10px solid transparent;
+    // border-bottom-color: red;
+    width: 0;
+    height: 0;
+    transition: all .6s;
+}
+.accessories li>a:hover{
+    background:#f6f6f6;
+    color: #00559a;
+    font-weight: 500;
+}
+.nav_pg{
+    width: 100%;height: 34px;margin-top: 35px;
+
+    img{
+        display: block;
+        margin-left: -15px;
+    }
+}
+

@@ -1,0 +1,107 @@
+.main {
+  height: 1600px;
+}
+.banner img {
+  width: 100%;
+  display: block;
+}
+.verb {
+  width: 18%;
+  background: #393f48;
+  float: left;
+}
+.verb aside {
+  width: 75%;
+  margin: 20px 30px 60px  30px;
+}
+.verb p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  padding: 40px 0 12px 0;
+  margin: 0 0 8px 0;
+  border-bottom: 1px solid #5e646c;
+}
+.verb ul li {
+  padding: 17px 0 17px 0;
+  color: #fff;
+  font-size: 14px;
+  line-height: 14px;
+}
+.verb ul li i {
+  float: right;
+  margin-right: 20px;
+  font-size: 20px;
+  color: #5e646c;
+}
+.verb ul li > i:hover {
+  cursor: pointer;
+}
+.verb ul li div {
+  line-height: 30px;
+  padding-top: 10px;
+  display: none;
+}
+.verb .tabs div.show {
+  display: block;
+}
+.verb section ul {
+  padding: 12px 0 20px 0;
+  border-bottom: 1px solid #5e646c;
+}
+.verb section ul li {
+  font-size: 12px;
+}
+.verb .remove {
+  display: block;
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: transparent;
+  min-width: 139px;
+  height: 36px;
+  margin: 20px;
+}
+.goods {
+  width: 82%;
+  height: 1000px;
+  float: left;
+}
+.goods .menudown {
+  width: 92%;
+  padding: 20px 4%;
+}
+.prolist-b {
+  width: 92%;
+}
+.prolist-b .prolist {
+  padding: 10px 4% 20px 2%;
+  overflow: hidden;
+}
+.prolist-b .prolist .item {
+  float: left;
+  padding: 0  9px;
+}
+.prolist-b .prolist .item a {
+  display: block;
+  text-decoration: none;
+}
+.prolist-b .prolist .item a img {
+  width: 150px;
+}
+.prolist-b .prolist .item a .p-title {
+  width: 150px;
+  font-size: 12px;
+  color: #333;
+  line-height: 14px;
+  padding: 14px 5% 0 5%;
+}
+.prolist-b .prolist .item a .p-price {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 0 30px;
+}
+.prolist-b .prolist .item a .p-price .rmb-before {
+  color: #808285;
+  text-decoration: line-through;
+}

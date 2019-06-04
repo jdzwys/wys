@@ -1,0 +1,382 @@
+// 用户登陆标题部分
+.red{
+    color: red;
+}
+#main{
+    margin-top: 35px;
+    h1{
+        font-size: 28px;
+        color: #00559a;
+        line-height: 28px;
+        font-weight: bold;
+        padding: 34px 0 20px 0;
+    }
+}
+.main-t >div{
+    width: 500px;
+    // height: 10000px;
+    float: left;
+}
+.main-t .rgs-r{
+    margin: 0 0 40px 80px;
+    background-color: #f6f6f6;
+}
+
+
+// 已注册用户
+.rgs-l{
+    margin: 24px 0;
+}
+.have h2{
+    font-size: 18px;
+    line-height: 18px;
+    color: #00539c;
+    margin: 0 0 10px
+}
+.have p{
+    font-size: 14px;
+    line-height: 14px;
+    color: #939090;
+    margin: 0 0 10px;
+}
+
+// 手机号码登陆部分
+.phone-num{
+    width: 110px;
+    text-align: right;
+    
+    &>span:nth-child(1){
+        color: #00539c;
+    }
+    &>span:nth-child(2){
+        font-size: 14px;
+        // line-height: 40px;
+        color: #000;
+    }
+    &>span:last-child{
+        font-size: 12px;
+        color: #000;
+    }
+}
+#login{
+    position: relative;
+    margin-top: 50px;
+
+    em{
+        display: block;
+        margin-left: 10px;
+    }
+}
+.input-box{
+    position: absolute;
+    left: 25%;
+    top: -10px;
+
+    input{
+        width: 260px;
+        height: 40px;
+        padding-left: 13px;
+    }
+}
+
+
+// 密码 部分
+.pwd{
+    position: relative;
+    margin-top: 30px;
+    .pwd-text{
+        width: 110px;
+        text-align: right;
+
+    &>span:nth-child(1){
+        color: #00539c;
+    }   
+    &>span:nth-child(2){
+        color: #000;
+        font-size: 14px;
+    }  
+ }
+ .pwd-ipt{
+    position: absolute;
+    left: 25%;
+    top: -10px;
+
+    input{
+        width: 260px;
+        height: 40px;
+        padding-left: 13px;
+    }
+ }
+}
+//忘记密码，记住密码部分
+.help{
+    width: 260px;
+    padding: 0 10px;
+    margin: 0 auto;
+    margin-top: 60px;
+    color: #58595b;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+
+
+    input{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        vertical-align: top;
+        
+
+    }
+    a{
+        display: block;
+        color: #58595b;
+        font-size: 12px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+
+// 提交按钮部分
+.btn{
+    width: 264px;
+    margin: 0 auto;
+    text-align: right;
+    padding: 30px 0;
+
+    .button{
+    width: 163px;
+    height: 40px;
+    border-radius: 3px;
+    border: 0;
+    background-color: #00559a;
+    color: #fff;
+    &:hover{
+        cursor: pointer;
+        background-color: #0073d1;
+    }
+}
+}
+
+
+// 其他方式登陆 部分
+.other{
+    width: 264px;
+    margin: 0 auto;
+    text-align: right;
+    line-height: 25px;
+
+    &>p:first-of-type{
+        color: #939090;
+        font-size: 14px;
+    }
+    p a{
+        color: #00559a;
+
+        span{
+            font-size: 25px;
+            padding: 0 5px;
+        }
+    }
+}
+
+//新用户注册部分
+
+// 标题部分
+.rgs-r h2{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #e30543;
+    padding:24px 0 0 50px;
+    
+}
+.rgs-r p{
+    font-size: 14px;
+    line-height: 16px;
+    color: #939090;
+    padding-left: 50px;
+}
+// 手机号码部分
+#new-id{
+    position: relative;
+    margin-top: 30px;
+    .new-num{
+        width: 120px;
+        text-align: right;
+        
+    }
+    span:nth-child(1){
+        color: #00539c;
+    }
+
+}
+.new-ipt{
+    position: absolute;
+    left: 26%;
+    top: -10px;
+
+    input{
+        width: 260px;
+        height: 40px;
+        padding-left: 13px;
+    }
+}
+
+// 验证码部分
+.new-code{
+    padding-top: 50px;
+    position: relative;
+
+    .set-code{
+        width: 120px;
+        text-align: right;
+    }
+    .new-code-ipt{
+        position: absolute;
+        left: 26%;
+        top: 40px;
+
+        input{
+            width: 140px;
+            height: 40px;
+            padding-left: 13px;
+        }
+    }
+    .random{
+        width: 80px;
+        height: 44px;
+        background: #fff;
+        position: absolute;
+        left: 59%;
+        top: 40px;
+    }
+    .random-btn{
+        width: 17px;
+        height: 20px;
+        background:url(../imgs/icons1.png) no-repeat -206px -905px;
+        position: absolute;
+        left: 77%;
+        top: 40px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+
+// 获取验证码的部分
+.phone-code{
+    padding-top: 50px;
+    position: relative;
+
+    .phone-code-t{
+        width: 120px;
+        text-align: right;
+    }
+    .new-phone-ipt{
+        position: absolute;
+        left: 26%;
+        top: 40px;
+
+        input{
+            width: 150px;
+            height: 40px;
+            padding-left: 13px;
+        }
+    }
+    .get-code{
+        width: 100px;
+        height: 38px;
+        line-height: 42px;
+        text-align: center;    
+        color: #00539c;
+        font-size: 12px;
+        border: 2px solid #00539c;
+        position: absolute;
+        left:61%;
+        top: 40px;
+    }
+}
+
+//用户密码部分
+.new-password{
+    position: relative;
+    margin-top: 50px;
+    .new-password-t{
+        width: 120px;
+        text-align: right;
+    }
+    span:nth-child(1){
+        color: #00539c;
+    }
+
+}
+.new-password-ipt{
+    position: absolute;
+    left: 26%;
+    top: -10px;
+
+    input{
+        width: 260px;
+        height: 40px;
+        padding-left:13px;
+        line-height: 40px;
+        font-size: 14px;
+        padding-left: 13px;
+    }
+}
+
+// 确认密码部分
+
+.new-aglin{
+    position: relative;
+    margin-top: 50px;
+    .new-t-aglin{
+        width: 120px;
+        text-align: right;
+    }
+    span:nth-child(1){
+        color: #00539c;
+    }
+
+}
+.new-input-aglin{
+    position: absolute;
+    left: 26%;
+    top: -10px;
+
+    input{
+        width: 260px;
+        height: 40px;
+        padding-left:13px;
+        line-height: 40px;
+        font-size: 14px;
+
+    }
+}
+
+
+
+// 用户协议部分
+.deal{
+    padding-top: 60px;
+    margin-left: 80px;
+    width: 360px;
+    height: 40px;
+    p{
+        color: #58595b;
+        font-size: 12px;
+        a{
+            color: #e6003e;
+            text-decoration: underline;
+        }
+    }
+    input{
+        width: 20px;
+        height: 20px;
+        vertical-align: top;
+    }
+    
+}
