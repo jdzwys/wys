@@ -19,6 +19,27 @@
             $('.slider').slider();
         });
     </script>
+    <script>
+        window.onload = function() {
+
+            var fixed = document.querySelector('.nav_btm');
+
+            window.onscroll = function() {
+                var a = document.documentElement.scrollTop || document.body.scrollTop
+
+                if (a >= 130) {
+                    a = 130;
+                    fixed.style.position = 'fixed';
+                    fixed.style.top = 0;
+                } else {
+                    fixed.style.position = 'static';
+
+
+
+                }
+            }
+        }
+    </script>
 
 </head>
 
@@ -170,7 +191,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <img="../imgs/nike-logo.jpg" alt="#" style="width: 60px;height: 25px;padding-top: 5px;">
+                                <img src="../imgs/nike-logo.jpg" alt="#" style="width: 60px;height: 25px;padding-top: 5px;">
                             </a>
                         </li>
                         <!-- 品牌 及二级导航部分 -->
@@ -742,5 +763,3 @@
 </body>
 
 </html>
-
-</html./register.html

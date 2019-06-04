@@ -71,6 +71,7 @@ h6 {
 .nav {
   height: 130px;
   background: #0a3665;
+  width: 100%;
 }
 .nav_top {
   height: 30px;
@@ -137,6 +138,8 @@ h6 {
 }
 .nav_btm {
   background: #0669b2;
+  width: 100%;
+  z-index: 100;
 }
 .nav_btm .btm {
   height: 35px;
